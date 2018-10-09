@@ -1,0 +1,53 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "football fixtures",
+      "types": [],
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "FixtureIntent",
+          "slots": [
+            {
+              "name": "team",
+              "type": "AMAZON.SportsTeam"
+            },
+            {
+              "name": "competition",
+              "type": "AMAZON.SportsEvent"
+            },
+            {
+              "name": "week",
+              "type": "AMAZON.DATE"
+            },
+            {
+              "name": "weekend",
+              "type": "AMAZON.DATE"
+            }
+          ],
+          "samples": [
+            "what matches are on",
+            "what matches are on this {weekend}",
+            "what fixtures are on",
+            "what fixtures are on this {weekend}",
+            "what {competition} matches are on",
+            "what {competition} matches are on this {weekend}",
+            "tell me the matches for the {competition}",
+            "what are the fixtures for the {competition}"
+          ]
+        }
+      ]
+    }
+  }
+}
