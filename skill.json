@@ -3,11 +3,11 @@
     "publishingInformation": {
       "locales": {
         "en-US": {
-          "summary": "Sample Short Description",
+          "summary": "Hear fixtures for upcoming matches in the English or Scottish Premier League",
           "examplePhrases": [
-            "Alexa open hello world",
-            "Alexa tell hello world hello",
-            "Alexa ask hello world say hello"
+            "Alexa open football fixtures",
+            "Alexa what are the fixtures for the English Premier League",
+            "Alexa what matches are on this weekend"
           ],
           "name": "Football_Fixtures",
           "description": "Sample Full Description"

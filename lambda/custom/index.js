@@ -1,9 +1,10 @@
 /* eslint-disable  func-names */
 /* eslint-disable  no-console */
-
-// const axios = require("axios");
+//SPL id 2204
+//EPL 2072
 const Alexa = require("ask-sdk");
-// var client = require("football-api-nodejs-client")(
+const axios = require("axios");
+// const client = require("football-api-nodejs-client")(
 //   fac589efee4a455eaf9dabb80173fe63
 // );
 
@@ -33,11 +34,24 @@ const FixtureIntentHandler = {
   },
   handle(handlerInput) {
     console.log("Entered the fixture intent handler");
-    const speechText = "Hello World!";
+    let country =
+      handlerInput.requestEnvelope.request.intent.slots.competition.value;
+    console.log(competition);
 
+    let id = 2204;
+
+    if (country.toLowercase() === "england") {
+      id = 2072;
+    }
+
+    let competition = client.getCompetitionById(id);
+
+    console.log(competition);
+
+    const speechText = `Which weekend would you like ${competition} fixtures for?`;
     return handlerInput.responseBuilder
       .speak(speechText)
-      .withSimpleCard("Hello World", speechText)
+      .withSimpleCard("Upcoming Fixtures", speechText)
       .getResponse();
   }
 };

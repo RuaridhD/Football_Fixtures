@@ -38,11 +38,11 @@
           ],
           "samples": [
             "what matches are on",
-            "what matches are on this {weekend}",
+            "what matches are on {weekend}",
             "what fixtures are on",
-            "what fixtures are on this {weekend}",
+            "what fixtures are on {weekend}",
             "what {competition} matches are on",
-            "what {competition} matches are on this {weekend}",
+            "what {competition} matches are on {weekend}",
             "tell me the matches for the {competition}",
             "what are the fixtures for the {competition}"
           ]
