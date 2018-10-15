@@ -72,6 +72,8 @@ typings/
 # Serverless directories
 .serverless
 
+# Config for API
+config.*
 
 .vscode
 .ask/*

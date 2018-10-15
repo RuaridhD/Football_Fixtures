@@ -17,35 +17,24 @@
           "samples": []
         },
         {
+          "name": "CountryIntent",
+          "slots": [
+            {
+              "name": "country",
+              "type": "AMAZON.Country"
+            }
+          ],
+          "samples": ["{country}"]
+        },
+        {
           "name": "FixtureIntent",
           "slots": [
             {
-              "name": "team",
-              "type": "AMAZON.SportsTeam"
-            },
-            {
-              "name": "competition",
-              "type": "AMAZON.SportsEvent"
-            },
-            {
-              "name": "week",
-              "type": "AMAZON.DATE"
-            },
-            {
-              "name": "weekend",
-              "type": "AMAZON.DATE"
+              "name": "matchday",
+              "type": "AMAZON.NUMBER"
             }
           ],
-          "samples": [
-            "what matches are on",
-            "what matches are on {weekend}",
-            "what fixtures are on",
-            "what fixtures are on {weekend}",
-            "what {competition} matches are on",
-            "what {competition} matches are on {weekend}",
-            "tell me the matches for the {competition}",
-            "what are the fixtures for the {competition}"
-          ]
+          "samples": ["{matchday}", "matchday {matchday}"]
         }
       ]
     }
