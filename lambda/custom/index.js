@@ -118,7 +118,9 @@ const FixtureIntentHandler = {
     const speechText = `The fixtures for matchday ${matchday} are: ${results
       .join(", ")
       .toString()
-      .replace("&", "and")}`;
+      .replace("&", "and")
+      .replace(/AFC/g, "")
+      .replace(/FC/g, "")}`;
 
     console.log(speechText);
     return handlerInput.responseBuilder
